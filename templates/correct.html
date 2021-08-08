@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/setting.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/btn.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/container.css') }}" />
+    <title>correct!</title>
+  </head>
+
+  <body>
+    <center class="outside">
+      <div class="box_result">정답입니다!</div>
+      <!---- image container ------->
+      <div class="image_outside-container">
+        <div class="img_box-2 img_from_clip">
+          <div class="class_box">
+            <h1 class="correct_class">정답은 {{ value }}입니다.</h1>
+          </div>
+          <div class="img_container">
+            <img src="{{ url_for('static', filename=image_file) }}">
+          </div>
+        </div>
+        <div class="img_box-2 img_from_user">
+          <div class="class_box">
+            <h1 class="correct_class">당신의 사진은 {{ predict_class }}입니다.</h1>
+          </div>
+          <div class="img_container">
+            <img src="{{ url_for('static', filename=predict) }}">
+          </div>
+        </div>
+      </div>
+      <!----------------------------->
+      <div class="replay_container"><a href="../" class="replay_txt">Replay?</a></div>
+    </center>
+  </body>
+</html>

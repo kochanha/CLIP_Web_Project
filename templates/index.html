@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/setting.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/btn.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/container.css') }}" />
+  </head>
+
+  <body>
+    <center class="outside">
+      <h1>
+        다음 사진은 무엇일까요?<br />주변에서 "이것"을 찾아 찍어 보내세요!
+      </h1>
+      <hr width="100%" color="black"/>
+      <h1>사진이 마음에 안 든다면 버튼을 클릭하세요!</h1>
+      <form>
+        <button class="start_btn">Change image!</button>
+      </form>
+      <!---- image container -------->
+      <div class="image_outside-container">
+        <div class="img_box-1 img_from_clip">
+        <img src="{{ url_for('static', filename=image_file) }}">
+          <img src="" alt="" />
+        </div>
+      <div class="img_box-1 img_from_user">
+        <br><br><center>
+        <form action = "http://localhost:5000/fileUpload" method = "POST"
+             enctype = "multipart/form-data">
+             <input type = "file" name = "file" />
+             <input class="check_btn" type = "submit" value="정답 확인하기"/>
+        </form></center>
+      </div>
+      <!------------------------->
+    </center>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+/*********** index page *************/
+
+.image_outside-container {
+  display: flex;
+  justify-content: space-around;
+  height: 70%;
+}
+.img_box-1 {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  background-color: rgb(240, 240, 240);
+}
+
+/************** correct page ***************/
+
+.box_result {
+  margin: 20px 0px;
+  width: 500px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(56, 153, 218);
+  color: white;
+  font-size: 40px;
+}
+
+.class_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 10%;
+  margin: 40px 0px;
+  padding: 10px;
+
+  background-color: rgb(51, 51, 51);
+  color: white;
+}
+
+.img_box-2 {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  overflow:hidden;
+
+  background-color: rgb(240, 240, 240);
+}
+
+.correct_class {
+  margin: 50px 0;
+}
+
+.img_container {
+  height: 100%;
+  overflow: hidden;
+}
+
+img {
+  height: 90%;
+  width: auto;
+}
+/************** wrong page ***************/
+.box_wrong {
+  background-color: tomato;
+}

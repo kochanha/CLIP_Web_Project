@@ -1,0 +1,43 @@
+/************** index page **************/
+.start_btn {
+  width: 500px;
+  height: 100px;
+  border-radius: 200px;
+  border: none;
+  font-size: 50px;
+  background-color: #adb9ca;
+  color: white;
+}
+
+.file_btn {
+  width: 400px;
+  height: 50px;
+  font-size: 30px;
+}
+
+.check_btn {
+  width: 300px;
+  height: 100px;
+  font-size: 40px;
+  background-color: #f4b183;
+  border-radius: 200px;
+  color: white;
+  align-self:
+}
+
+/************* correct page *************/
+.replay_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 100px;
+  border-radius: 100px;
+  background-color: rgb(251, 244, 26);
+
+}
+.replay_txt{
+    color: white;
+    font-size: 50px;
+}
+/************** wrong page **************/
